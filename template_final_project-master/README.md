@@ -6,13 +6,13 @@
 
 ## Team Members
 
-<< List team member names >>
+Michael Truong
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+A game of pong where opponents try to score in each other's goals. There will be a ball and controllable walls. When the ball hits a wall, the ball will go the opposite direction
 
 ***    
 
@@ -30,11 +30,11 @@
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Start Menu
+2. Game score
+3. Controllable walls
+4. Balls that bounce 
+5. Ability to add more balls
 
 ### Classes
 
