@@ -10,7 +10,7 @@ screen = pygame.display.set_mode((screen_height, screen_width))
 
 # make rectangle
 speed = pygame.math.Vector2
-ACC = 1
+ACC = 0.7
 class Rectangle(pygame.sprite.Sprite):
     def __init__(self, locx, locy):
         super().__init__()
@@ -18,14 +18,20 @@ class Rectangle(pygame.sprite.Sprite):
         self.surf.fill('white')
         self.image = self.surf
         self.rect = self.surf.get_rect(center = (locx, locy))
-        self.acc = speed(0, 0)
+        self.acc = speed(0, 0)        
     def movement(self, l, r):
         key = pygame.key.get_pressed()
         if key[l]:
             self.acc.x = -ACC
-        if key[r]:
+            if self.rect.x < 0:
+                self.rect.x = 800
+        elif key[r]:
             self.acc.x = ACC
-        
+            if self.rect.x > 800:
+                self.rect.x = 0
+        else:
+            self.acc.x = 0
+
         self.rect.x += self.acc.x  
 
 
