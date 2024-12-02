@@ -42,8 +42,36 @@ A game of pong where opponents try to score in each other's goals. There will be
 
 ## ATP
 
+Test Case 1 - Test if the keys properly move the two tables
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Program          | Two pong tables appear            |
+|  2                   | Press and hold a     | bottom board moves left           |
+|  3                   | press and hold d     | bottom board moves right          |
+|  4                   | press and hold left  | top board moves left              |
+|  5                   | press and hold right | top board moves right             |
+
+Test Case 2 - Test if 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Run Counter Program  |GUI window appears with count = 0  |
 |  2                   | click count button   | display changes to count = 1      |
-etc...
+
+Test Case 3
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | click count button   | display changes to count = 1      |
+
+Test Case 4
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | click count button   | display changes to count = 1      |
+
+Test Case 5
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | click count button   | display changes to count = 1      |
+

@@ -8,11 +8,11 @@ screen_height = 800
 screen = pygame.display.set_mode((screen_height, screen_width))
 rectangle_1 = Rectangle(385, 10)
 rectangle_2 = Rectangle(386, 790)
-pong = Ball()
+pong = Ball(400, 400)
 half = Dividor()
 
 all_sprites = pygame.sprite.Group()
-all_sprites.add(rectangle_1, rectangle_2, pong, half)
+all_sprites.add(rectangle_1, rectangle_2, half, pong)
 
 def main():
     while True:
@@ -22,7 +22,7 @@ def main():
                 sys.exit()
         rectangle_1.movement(pygame.K_LEFT, pygame.K_RIGHT)
         rectangle_2.movement(pygame.K_a, pygame.K_d)
-        
+        pong.movement()
         screen.fill('black')
         all_sprites.draw(screen)
         pygame.display.flip()
