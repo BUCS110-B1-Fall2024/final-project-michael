@@ -44,8 +44,7 @@ class Ball(pygame.sprite.Sprite):
         self.image = self.surf 
         self.surf.fill('black') # fill the background for the ball
         self.ball = pygame.draw.circle(self.image, 'white', (6, 6), 6)
-        self.rect = self.surf.get_rect(center = (400, 400))
-
+        self.rect = self.surf.get_rect(center = (400, 400))        
 pong = Ball()
 
 
@@ -57,8 +56,8 @@ class Dividor(pygame.sprite.Sprite):
         self.surf.fill('white')
         self.line = pygame.draw.line(self.image, 'white', (0, 400), (800, 400))
         self.rect = self.surf.get_rect(center = (400, 400))
-
 half = Dividor()
+
 all_sprites = pygame.sprite.Group()
 all_sprites.add(rectangle_1, rectangle_2, pong, half)
 
