@@ -2,11 +2,14 @@ import pygame, sys
 pygame.init()
 from ball_mod import Ball
 from rect_mod import Rectangle
+from div_model import Dividor
 screen_width = 800
 screen_height = 800
 screen = pygame.display.set_mode((screen_height, screen_width))
 rectangle_1 = Rectangle(385, 10)
 rectangle_2 = Rectangle(386, 790)
+pong = Ball()
+half = Dividor()
 
 all_sprites = pygame.sprite.Group()
 all_sprites.add(rectangle_1, rectangle_2, pong, half)
