@@ -23,6 +23,8 @@ def main():
         rectangle_1.movement(pygame.K_LEFT, pygame.K_RIGHT)
         rectangle_2.movement(pygame.K_a, pygame.K_d)
         pong.movement()
+        pong.coll(rectangle_1, rectangle_2)
+
         screen.fill('black')
         all_sprites.draw(screen)
         pygame.display.flip()

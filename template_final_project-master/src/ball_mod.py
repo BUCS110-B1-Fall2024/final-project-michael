@@ -1,5 +1,5 @@
 import pygame
-
+import random
 class Ball(pygame.sprite.Sprite):
     def __init__(self, posx, posy):
         super().__init__()
@@ -27,5 +27,12 @@ class Ball(pygame.sprite.Sprite):
             self.posx = 400
             self.posy = 400
         self.rect.center = (self.posx, self.posy) # new posistion
+    def coll(self, obj1, obj2):
+        if self.rect.colliderect(obj1):
+            self.velx = -self.velx
+            self.vely = -self.vely
+        if self.rect.colliderect(obj2):
+            self.velx = -self.velx
+            self.vely = -self.vely
 
 

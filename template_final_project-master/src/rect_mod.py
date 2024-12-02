@@ -1,6 +1,6 @@
 import pygame
 speed = pygame.math.Vector2
-ACC = 0.7
+ACC = 0.55
 class Rectangle(pygame.sprite.Sprite):
     def __init__(self, locx, locy):
         super().__init__()
