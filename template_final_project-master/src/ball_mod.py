@@ -1,5 +1,4 @@
 import pygame
-from model import Rectangle
 class Ball(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
