@@ -20,11 +20,11 @@ A game of pong where opponents try to score in each other's goals. There will be
 
 ### Initial Design
 
-![initial gui](assets/gui.jpg)
+![initial gui](c:\final-project-michael\template_final_project-master\assets\gui.jpg)
 
 ### Final Design
 
-![final gui](assets/finalgui.jpg)
+![final gui]
 
 ## Program Design
 
