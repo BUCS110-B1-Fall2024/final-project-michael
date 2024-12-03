@@ -51,27 +51,32 @@ Test Case 1 - Test if the keys properly move the two tables
 |  4                   | press and hold left  | top board moves left              |
 |  5                   | press and hold right | top board moves right             |
 
-Test Case 2 - Test if 
-| Step                 |Procedure             |Expected Results                   |
-|----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+Test Case 2 - Test if the ball bounces on on the table/walls
 
-Test Case 3
-| Step                 |Procedure             |Expected Results                   |
-|----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+Step 1: Hit the ball with the pong table
+Expected Results: The ball bounces
+Step 2: Let the ball hit the wall
+Expected Results: The ball bounces off the wall
 
-Test Case 4
-| Step                 |Procedure             |Expected Results                   |
-|----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+Test Case 3 - Test if the ball resets if there is no hit by the paddles:
 
-Test Case 5
-| Step                 |Procedure             |Expected Results                   |
-|----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+Step 1: Let the ball fall through the bottom
+Expected Results: The ball spawns back in the middle
+Step 2: Let the ball fall through the top
+Expected Results: The ball spawns back in the middle
+
+Test Case 4 - Test if the score keeper works:
+
+Step 1: Let the ball get hit by the bottom paddle
+Expected Results: +1 is added to the score for the bottom paddle
+Step 2: Let the ball get hit by the top paddle
+Expected Results: +1 is added to the score for the top paddle
+
+Test Case 5 - Test if the end works:
+
+Step 1: Let the ball fall through the bottom
+Expected Results: The game ends and the winner is the bottom paddle
+Step 2: Let the ball fall through the top
+Expected Results: The game ends and the winner is the top paddle
+
 

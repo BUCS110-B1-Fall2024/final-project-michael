@@ -15,11 +15,11 @@ class Ball(pygame.sprite.Sprite):
         self.posx += self.velx
         self.posy += self.vely
         if self.posx >= 800:
-            self.velx = -self.velx
-            self.vely = -self.vely
+            self.velx = -self.velx + random.randrange(0, 0.05)
+            self.vely = -self.vely + random.randrange(0, 0.05)
         if self.posx <= 0:
-            self.velx = -self.velx
-            self.vely = -self.vely
+            self.velx = -self.velx + random.randrange(0, 0.05)
+            self.vely = -self.vely + random.randrange(0, 0.05)
         if self.posy >= 800:
             self.posx = 400
             self.posy = 400
