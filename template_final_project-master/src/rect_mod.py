@@ -1,4 +1,5 @@
 import pygame
+#from controller import pong
 speed = pygame.math.Vector2
 ACC = 0.55
 class Rectangle(pygame.sprite.Sprite):
@@ -8,7 +9,9 @@ class Rectangle(pygame.sprite.Sprite):
         self.surf.fill('white')
         self.image = self.surf
         self.rect = self.surf.get_rect(center = (locx, locy))
-        self.acc = speed(0, 0)        
+        self.acc = speed(0, 0) 
+        score = 0   
+        self.score = score   
     def movement(self, l, r):
         key = pygame.key.get_pressed()
         if key[l]:
@@ -21,7 +24,11 @@ class Rectangle(pygame.sprite.Sprite):
                 self.rect.x = 0
         else:
             self.acc.x = 0
-
         self.rect.x += self.acc.x  
-rectangle_1 = Rectangle(385, 10)
-rectangle_2 = Rectangle(386, 790)
+"""
+   def hit(self):
+        if self.rect.colliderect(pong.rect):
+            return True
+        else:
+            return False
+"""
