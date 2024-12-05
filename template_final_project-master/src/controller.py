@@ -13,7 +13,6 @@ screen_width = 800
 screen_height = 800
 screen = pygame.display.set_mode((screen_height, screen_width))
 all_sprites = pygame.sprite.Group()
-all_sprites.add(rectangle_1, rectangle_2, half)
 def start(text, color, x, y):
     font = pygame.font.SysFont('Comic Sans MS', 30)
     start_screen = font.render(text, False, (color))
@@ -24,17 +23,16 @@ def main():
     game_started = False
     second_test = False
     respawns = True
-    
     while True:
         screen.fill('white')
         if game_started == True:
-            screen.fill('blue')
+            screen.fill('black')
             pass
         else:
             start("Press space to start", 'black', 300, 300)
         if second_test == True:
             screen.fill('black')
-            all_sprites.add(pong)
+            all_sprites.add(rectangle_1, rectangle_2, half, pong)
             pass
         else:
             start("Press u for unlimitred respawns, i for one", 'white', 100, 600)
