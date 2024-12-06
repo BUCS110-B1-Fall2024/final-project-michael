@@ -6,3 +6,5 @@ class Buttons(pygame.sprite.Sprite):
         self.image = pygame.image.load(image)
         self.rect = self.image.get_rect()
         self.rect = self.image.get_rect(center = (x, y))        
+red = Buttons('red.png', 200, 400)
+green = Buttons('green.png', 600, 400)

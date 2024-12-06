@@ -35,10 +35,10 @@ class Ball(pygame.sprite.Sprite):
         self.rect.center = (self.posx, self.posy) # new posistion
     def coll(self, obj1, obj2):
         if self.rect.colliderect(obj1):
-            self.vely = -self.vely 
+            self.vely = -self.vely * 1.1
             self.score += 1
         if self.rect.colliderect(obj2):
-            self.vely = -self.vely 
+            self.vely = -self.vely * 1.1
             self.score += 1
     def scores(self):
         score = self.score
@@ -48,4 +48,5 @@ class Ball(pygame.sprite.Sprite):
         return int(self.respawns)
         
 
+pong = Ball(400, 400, 0, 0)
 

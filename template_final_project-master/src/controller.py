@@ -1,18 +1,13 @@
 import pygame, sys
-from ball_mod import Ball
-from rect_mod import Rectangle
+from ball_mod import Ball, pong
+from rect_mod import Rectangle, rectangle_1, rectangle_2
 from div_model import Dividor, half
-from colors import Buttons
+from colors import Buttons, red, green
 pygame.init()
 clock = pygame.time.Clock()
 clock.tick(60)  # sets it to 60 fps
 
-rectangle_1 = Rectangle(385, 10)
-rectangle_2 = Rectangle(386, 790)
-pong = Ball(400, 400, 0, 0)
-red = Buttons('red.png', 200, 400)
-green = Buttons('green.png', 600, 400)
-#### make these not global
+
 screen_width = 800
 screen_height = 800
 screen = pygame.display.set_mode((screen_height, screen_width))

@@ -25,10 +25,6 @@ class Rectangle(pygame.sprite.Sprite):
         else:
             self.acc.x = 0
         self.rect.x += self.acc.x  
-"""
-   def hit(self):
-        if self.rect.colliderect(pong.rect):
-            return True
-        else:
-            return False
-"""
+
+rectangle_1 = Rectangle(385, 10)
+rectangle_2 = Rectangle(386, 790)
