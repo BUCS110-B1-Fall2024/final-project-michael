@@ -1,18 +1,17 @@
 
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
 # Pong 
+
 ## CS110 B1 Final Project Semester 1, 2024
 
 ## Team Members
 
 Michael Truong
 
-***
 
 ## Project Description
 
-A game of pong where opponents try to score in each other's goals. There will be a ball and controllable walls. When the ball hits a wall, the ball will go the opposite direction
+A game of pong where a player will try to keep the ball in play for as long as possible. There will be a ball and controllable walls. When the ball hits a wall, the ball will go the opposite direction and the score will increase. There are two gamemodes, one for unlimited plays and the other where there are only two tries.
 
 ***    
 
@@ -20,11 +19,11 @@ A game of pong where opponents try to score in each other's goals. There will be
 
 ### Initial Design
 
-![initial gui](c:\final-project-michael\template_final_project-master\assets\gui.jpg)
+(c:\final-project-michael\template_final_project-master\assets\gui.jpg)
 
 ### Final Design
 
-![final gui]
+(C:\final-project-michael\template_final_project-master\assets\final gui.png)
 
 ## Program Design
 
@@ -32,13 +31,16 @@ A game of pong where opponents try to score in each other's goals. There will be
 
 1. Start Menu
 2. Game score
-3. Controllable walls
-4. Balls that bounce 
-5. Ability to add more balls
+3. Controllable paddles
+4. Balls that bounce off paddles
+5. Gamemode choice
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+1. Ball class creates the ball used with customizable features
+2. Rectangle class creates the paddles used, with customizable features
+3. Divider class creates lines that divide the screen
+4. Colors class are what I used to import files and images 
 
 ## ATP
 
@@ -53,30 +55,39 @@ Test Case 1 - Test if the keys properly move the two tables
 
 Test Case 2 - Test if the ball bounces on on the table/walls
 
-Step 1: Hit the ball with the pong table
-Expected Results: The ball bounces
-Step 2: Let the ball hit the wall
-Expected Results: The ball bounces off the wall
+Step 1: Hit the ball with the pong table.
+Expected Results: The ball bounces.
+Step 2: Let the ball hit the wall.
+Expected Results: The ball bounces off the wall.
 
 Test Case 3 - Test if the ball resets if there is no hit by the paddles:
 
-Step 1: Let the ball fall through the bottom
-Expected Results: The ball spawns back in the middle
-Step 2: Let the ball fall through the top
-Expected Results: The ball spawns back in the middle
+Step 1: Let the ball fall through the bottom.
+Expected Results: The ball spawns back in the middle.
+Step 2: Let the ball fall through the top.
+Expected Results: The ball spawns back in the middle.
 
 Test Case 4 - Test if the score keeper works:
 
-Step 1: Let the ball get hit by the bottom paddle
-Expected Results: +1 is added to the score for the bottom paddle
-Step 2: Let the ball get hit by the top paddle
-Expected Results: +1 is added to the score for the top paddle
+Step 1: Let the ball get hit by the bottom paddle.
+Expected Results: +1 is added to the score.
+Step 2: Let the ball get hit by the top paddle.
+Expected Results: +1 is added to the score .
 
 Test Case 5 - Test if the end works:
 
-Step 1: Let the ball fall through the bottom
-Expected Results: The game ends and the winner is the bottom paddle
-Step 2: Let the ball fall through the top
-Expected Results: The game ends and the winner is the top paddle
+Step 1: Let the ball fall through the bottom.
+Expected Results: One life is lost.
+Step 2: Let the ball fall through the top.
+Expected Results: One life is lost.
+
+Test Case 6 - Gamemode 1 unlimited
+
+Step 1: Let the ball fall through the bottom. Reapeat many times.
+Expected Results: The game should not end.
+
+Test case 7 - Gamemode 2 two lives
+StEP 1: Let the ball fall through the bottom. Repeat twice
+Expected Results: The game ends and a window saying "you lose!" appears.
 
 
