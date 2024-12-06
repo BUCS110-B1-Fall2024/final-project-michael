@@ -13,6 +13,7 @@ Michael Truong
 
 A game of pong where a player will try to keep the ball in play for as long as possible. There will be a ball and controllable walls. When the ball hits a wall, the ball will go the opposite direction and the score will increase. There are two gamemodes, one for unlimited plays and the other where there are only two tries.
 
+**** I mistook the controller file for the main so it has to be ran through the controller file in src
 ***    
 
 ## GUI Design
