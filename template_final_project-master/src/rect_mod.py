@@ -7,7 +7,7 @@ class Rectangle(pygame.sprite.Sprite):
         super().__init__()
         self.surf = pygame.Surface((135, 10))
         self.surf.fill('white')
-        self.image = self.surf
+        self.image = self.surf # shows the image
         self.rect = self.surf.get_rect(center = (locx, locy))
         self.acc = speed(0, 0) 
         score = 0   
