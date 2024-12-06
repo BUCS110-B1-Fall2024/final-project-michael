@@ -16,9 +16,9 @@ screen_height = 800
 screen = pygame.display.set_mode((screen_height, screen_width)) # sets screen
 all_sprites = pygame.sprite.Group() # sets the sprites to be used
 def start(text, color, x, y, size): # function for the text
-    font = pygame.font.SysFont('Comic Sans MS', size)
-    start_screen = font.render(text, False, (color))
-    screen.blit(start_screen, (x, y))
+    font = pygame.font.SysFont('Comic Sans MS', size) # system font, size
+    start_screen = font.render(text, False, (color)) # variable to render with text and font
+    screen.blit(start_screen, (x, y)) # location
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
             all_sprites.remove(red, green) # game loop starts when mouse is clicked on either blue or green
             screen.fill('black')
             all_sprites.add(rectangle_1, rectangle_2, half, pong)
-            start(f"Your score is: {pong.scores()}", 'white', 200, 200, 10) # shows score
+            start(f"Your score is: {pong.scores()}", 'white', 15, 410, 10) # shows score
             pass
         else:
             start("Click red for unlimited respawns, green for two", 'white', 100, 200, 30)
@@ -53,10 +53,10 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN: #if mouse button is clicked on one of the buttons, game is started
                 x, y = pygame.mouse.get_pos()
                 if (85 <= x <= 315) and (285 <= y <= 515):
-                    print("Unlimited Respawns")
-                    second_test = True
+                    print("Unlimited Respawns") 
+                    second_test = True # variable for second screen
                 if (485 <= x <= 715) and (285 <= y <= 515):
-                    respawns = False
+                    respawns = False # respawn variable is here, which means there will be respawns
                     second_test = True
             
 
